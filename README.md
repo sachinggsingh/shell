@@ -486,9 +486,3 @@ make test
 python -m pytest tests
 cd remote/dev-shell-monitor && go test ./...
 ```
-
----
-
-## Implementation contract
-
-`SKILLs.md` is the engineering spec this tree was built from (protocol, collectors, SSH options, definition of done). If behavior and that document disagree, treat the running code and this README as what is implemented today, and the spec as the intended contract.
