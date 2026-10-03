@@ -1,0 +1,8 @@
+{
+  "servers": [],
+  "tracing": {
+    "enabled": false,
+    "otlp_endpoint": "",
+    "service_name": "dev-shell"
+  }
+}

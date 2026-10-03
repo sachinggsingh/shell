@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+remote/dev-shell-monitor/dist/
+.DS_Store
+.dev-shell-monitor.pid
+.dev-shell-monitor.log
+.dev-shell-client.json
+
+SKILLs.md
+SKILLs_CODING_AGENT.md
+SKILLs_CLEAN.md

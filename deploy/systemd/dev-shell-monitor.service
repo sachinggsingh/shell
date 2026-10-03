@@ -1,0 +1,19 @@
+[Unit]
+Description=dev_shell
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=devshell
+Group=devshell
+WorkingDirectory=/opt/dev-shell-monitor
+ExecStart=/opt/dev-shell-monitor/dev-shell-monitor \
+    --config /etc/dev-shell-monitor/config.yaml
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

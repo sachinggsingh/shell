@@ -1,0 +1,31 @@
+server:
+  id: "server-1"
+  bind: "127.0.0.1"
+  port: 9477
+
+collection:
+  cpu_interval: 1s
+  memory_interval: 2s
+  disk_interval: 5s
+  network_interval: 2s
+  system_interval: 10s
+  disk_paths:
+    - /
+
+process:
+  enabled: false
+  interval: 5s
+  top_n: 10
+
+stream:
+  buffer_size: 256
+  heartbeat_interval: 5s
+
+logs:
+  journal: []
+  files: []
+
+tracing:
+  enabled: false
+  otlp_endpoint: ""
+  service_name: "dev-shell-monitor"
